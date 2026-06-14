@@ -25,5 +25,8 @@ EXPOSE 8080
 # Variables d'environnement par défaut
 ENV JAVA_OPTS="-Xms256m -Xmx512m -XX:+UseContainerSupport"
 
+# ✅ Activer le profil prod par défaut
+ENV SPRING_PROFILES_ACTIVE=prod
+
 # Lancer l'application
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]

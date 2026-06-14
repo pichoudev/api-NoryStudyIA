@@ -29,7 +29,7 @@ services:
 
       # JWT
       - key: JWT_SECRET
-        sync: false
+        value: fA9vJ0jH8rKXzY7Qm2NpL5sTdEwR1uIoB6VcGkXnM4Y=
 
       # Gemini
       - key: GEMINI_API_KEY

@@ -1,0 +1,67 @@
+services:
+  - type: web
+    name: norvya-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+
+    # Variables d'environnement
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+
+      - key: SERVER_PORT
+        value: 8080
+
+      # Base de données Neon
+      - key: DB_HOST
+        sync: false  # à renseigner dans le dashboard Render
+
+      - key: DB_NAME
+        sync: false
+
+      - key: DB_USERNAME
+        sync: false
+
+      - key: DB_PASSWORD
+        sync: false
+
+      # JWT
+      - key: JWT_SECRET
+        sync: false
+
+      # Gemini
+      - key: GEMINI_API_KEY
+        sync: false
+
+      # Email Brevo
+      - key: MAIL_HOST
+        value: smtp-relay.brevo.com
+
+      - key: MAIL_PORT
+        value: 587
+
+      - key: MAIL_USERNAME
+        sync: false
+
+      - key: MAIL_PASSWORD
+        sync: false
+
+      # R2 Cloudflare
+      - key: R2_ACCOUNT_ID
+        sync: false
+
+      - key: R2_ACCESS_KEY
+        sync: false
+
+      - key: R2_SECRET_KEY
+        sync: false
+
+      - key: R2_BUCKET_NAME
+        value: norvya-courses
+
+      - key: R2_PUBLIC_URL
+        sync: false
+
+    healthCheckPath: /api/actuator/health

@@ -1,0 +1,169 @@
+{
+  "properties": [
+    {
+      "name": "spring.mail.from.name",
+      "type": "java.lang.String",
+      "description": "Nom affiché comme expéditeur des emails"
+    },
+    {
+      "name": "spring.mail.from.email",
+      "type": "java.lang.String",
+      "description": "Adresse email affichée comme expéditeur"
+    },
+    {
+      "name": "spring.mail.ssl.enable",
+      "type": "java.lang.String",
+      "description": "Adresse email affichée comme expéditeur"
+    },
+    {
+      "name": "gemini.api.key",
+      "type": "java.lang.String",
+      "description": "Clé API Google Gemini"
+    },
+    {
+      "name": "gemini.api.base-url",
+      "type": "java.lang.String",
+      "description": "URL de base de l'API Gemini"
+    },
+    {
+      "name": "gemini.api.model",
+      "type": "java.lang.String",
+      "description": "Modèle Gemini principal"
+    },
+    {
+      "name": "gemini.api.fallback-model",
+      "type": "java.lang.String",
+      "description": "Modèle Gemini de secours"
+    },
+    {
+      "name": "gemini.api.max-output-tokens",
+      "type": "java.lang.Integer",
+      "description": "Nombre maximum de tokens en sortie"
+    },
+    {
+      "name": "gemini.api.temperature",
+      "type": "java.lang.Double",
+      "description": "Température de génération"
+    },
+    {
+      "name": "gemini.api.timeout-seconds",
+      "type": "java.lang.Integer",
+      "description": "Timeout en secondes"
+    },
+    {
+      "name": "gemini.api.max-retries",
+      "type": "java.lang.Integer",
+      "description": "Nombre maximum de tentatives"
+    },
+    {
+      "name": "security.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Clé secrète JWT"
+    },
+    {
+      "name": "security.jwt.access-token-expiration",
+      "type": "java.lang.Long",
+      "description": "Durée access token en millisecondes"
+    },
+    {
+      "name": "security.jwt.refresh-token-expiration",
+      "type": "java.lang.Long",
+      "description": "Durée refresh token en millisecondes"
+    },
+    {
+      "name": "stripe.api.key",
+      "type": "java.lang.String",
+      "description": "Clé secrète Stripe"
+    },
+    {
+      "name": "stripe.api.webhook-secret",
+      "type": "java.lang.String",
+      "description": "Secret webhook Stripe"
+    },
+    {
+      "name": "stripe.prices.student",
+      "type": "java.lang.String",
+      "description": "ID prix Stripe plan Student"
+    },
+    {
+      "name": "stripe.prices.pro",
+      "type": "java.lang.String",
+      "description": "ID prix Stripe plan Pro"
+    },
+    {
+      "name": "aws.s3.bucket-name",
+      "type": "java.lang.String",
+      "description": "Nom du bucket S3"
+    },
+    {
+      "name": "aws.s3.region",
+      "type": "java.lang.String",
+      "description": "Région AWS"
+    },
+    {
+      "name": "aws.s3.access-key",
+      "type": "java.lang.String",
+      "description": "Clé d'accès AWS"
+    },
+    {
+      "name": "aws.s3.secret-key",
+      "type": "java.lang.String",
+      "description": "Clé secrète AWS"
+    },
+    {
+      "name": "aws.s3.endpoint-url",
+      "type": "java.lang.String",
+      "description": "URL endpoint S3 custom"
+    },
+    {
+      "name": "studyforge.quotas.free.courses-per-month",
+      "type": "java.lang.Integer",
+      "description": "Cours par mois plan gratuit"
+    },
+    {
+      "name": "studyforge.quotas.free.quiz-questions",
+      "type": "java.lang.Integer",
+      "description": "Questions quiz plan gratuit"
+    },
+    {
+      "name": "studyforge.quotas.free.flashcards",
+      "type": "java.lang.Integer",
+      "description": "Flashcards plan gratuit"
+    },
+    {
+      "name": "studyforge.quotas.student.courses-per-month",
+      "type": "java.lang.Integer",
+      "description": "Cours par mois plan Student"
+    },
+    {
+      "name": "studyforge.quotas.student.quiz-questions",
+      "type": "java.lang.Integer",
+      "description": "Questions quiz plan Student"
+    },
+    {
+      "name": "studyforge.quotas.student.flashcards",
+      "type": "java.lang.Integer",
+      "description": "Flashcards plan Student"
+    },
+    {
+      "name": "studyforge.quotas.pro.courses-per-month",
+      "type": "java.lang.Integer",
+      "description": "Cours par mois plan Pro"
+    },
+    {
+      "name": "studyforge.quotas.pro.quiz-questions",
+      "type": "java.lang.Integer",
+      "description": "Questions quiz plan Pro"
+    },
+    {
+      "name": "studyforge.quotas.pro.flashcards",
+      "type": "java.lang.Integer",
+      "description": "Flashcards plan Pro"
+    },
+    { "name": "r2.account-id",  "type": "java.lang.String", "description": "Cloudflare Account ID" },
+    { "name": "r2.access-key",  "type": "java.lang.String", "description": "R2 Access Key" },
+    { "name": "r2.secret-key",  "type": "java.lang.String", "description": "R2 Secret Key" },
+    { "name": "r2.bucket-name", "type": "java.lang.String", "description": "R2 Bucket Name" },
+    { "name": "r2.public-url",  "type": "java.lang.String", "description": "R2 Public URL" }
+  ]
+}

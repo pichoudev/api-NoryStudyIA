@@ -36,7 +36,7 @@ build/
 .env
 *.env
 src/main/resources/application.properties
-application-prod.properties
+#application-prod.properties
 application-local.properties
 
 # Logs

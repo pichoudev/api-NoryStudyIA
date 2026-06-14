@@ -26,14 +26,16 @@ public class CorsConfig {
         // ✅ Autoriser ton frontend Vercel + localhost dev
         config.setAllowedOrigins(List.of(
                 "https://norvyastudy.vercel.app",
+                "https://norvyastudy-fcesb7cgl-pichoudevs-projects.vercel.app",
                 "http://localhost:3000",
-                "http://localhost:3001"
+                "http://localhost:3001",
+                "*"
         ));
 
         // ✅ Méthodes HTTP autorisées
         config.setAllowedMethods(List.of(
                 "GET", "POST", "PUT", "DELETE",
-                "PATCH", "OPTIONS"
+                "PATCH", "OPTIONS" ,"*"
         ));
 
         // ✅ Headers autorisés
@@ -44,13 +46,15 @@ public class CorsConfig {
                 "Origin",
                 "X-Requested-With",
                 "Access-Control-Request-Method",
-                "Access-Control-Request-Headers"
+                "Access-Control-Request-Headers",
+                "*"
         ));
 
         // ✅ Exposer le header Authorization dans la réponse
         config.setExposedHeaders(List.of(
                 "Authorization",
-                "Access-Control-Allow-Origin"
+                "Access-Control-Allow-Origin",
+                "*"
         ));
 
         // ✅ Autoriser les cookies et credentials

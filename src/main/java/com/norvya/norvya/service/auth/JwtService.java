@@ -1,6 +1,5 @@
 package com.norvya.norvya.service.auth;
 
-
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,13 +11,13 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-    @Value("${security.jwt.secret}")
+    @Value("${JWT_SECRET}")  // Changé ici
     private String secret;
 
-    @Value("${security.jwt.access-token-expiration}")
+    @Value("${JWT_ACCESS_EXPIRATION:86400000}")  // Changé ici avec valeur par défaut
     private long accessExpiration;
 
-    @Value("${security.jwt.refresh-token-expiration}")
+    @Value("${JWT_REFRESH_EXPIRATION:2592000000}")  // Changé ici avec valeur par défaut
     private long refreshExpiration;
 
     private SecretKey getKey() {

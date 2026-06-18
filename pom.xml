@@ -93,10 +93,10 @@
 
 
         <!-- Email (envoi OTP) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-mail</artifactId>-->
+<!--        </dependency>-->
 
         <!-- Cache (stocker les OTP temporairement) -->
         <dependency>
@@ -183,6 +183,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
+
+
+
+        <!-- spring-boot-starter-web suffit, RestTemplate est déjà inclus -->
         <!-- ══════════════════════════════════════
              PAIEMENT
         ══════════════════════════════════════ -->
